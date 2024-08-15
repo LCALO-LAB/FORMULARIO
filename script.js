@@ -6,6 +6,7 @@ document.getElementById('insertButton').addEventListener('click', function () {
   const cedula = document.getElementById('cedula').value;
   const nombre = document.getElementById('nombre').value;
   const apellido = document.getElementById('apellido').value;
+  const direccion = document.getElementById('direccion').value;
   const telefono = document.getElementById('telefono').value;
   const email = document.getElementById('email').value;
   const gender = document.getElementById('gender').value;
@@ -51,6 +52,7 @@ document.getElementById('modifyButton').addEventListener('click', function () {
   if (cliente) {
     cliente.nombre = prompt("Ingrese el nuevo nombre:", cliente.nombre) || cliente.nombre;
     cliente.apellido = prompt("Ingrese el nuevo apellido:", cliente.apellido) || cliente.apellido;
+    cliente.direccion = prompt("Ingrese la nueva dirección:", cliente.direccion) || cliente.direccion;
     cliente.telefono = prompt("Ingrese el nuevo teléfono:", cliente.telefono) || cliente.telefono;
     cliente.email = prompt("Ingrese el nuevo email:", cliente.email) || cliente.email;
     cliente.gender = prompt("Ingrese el nuevo género (masculino/femenino/otro):", cliente.gender) || cliente.gender;
@@ -82,7 +84,7 @@ document.getElementById('consultButton').addEventListener('click', function () {
   const cliente = clientes.find(c => c.cedula === cedula);
 
   if (cliente) {
-    alert(`Cliente encontrado: \nCédula: ${cliente.cedula} \nNombre: ${cliente.nombre} ${cliente.apellido}  \nTeléfono: ${cliente.telefono} \nEmail: ${cliente.email} \nGénero: ${cliente.gender}`);
+    alert(`Cliente encontrado: \nCédula: ${cliente.cedula} \nNombre: ${cliente.nombre} ${cliente.apellido} \nDirección: ${cliente.direccion} \nTeléfono: ${cliente.telefono} \nEmail: ${cliente.email} \nGénero: ${cliente.gender}`);
   } else {
     alert('Cliente no encontrado.');
   }
