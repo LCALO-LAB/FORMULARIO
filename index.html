@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Clientes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Formulario de Clientes</h2>
+      <form id="clientForm">
+        <label for="cedula">Cédula:</label>
+        <input 
+          type="text" 
+          id="cedula" 
+          placeholder="Ingrese su cédula" 
+          required 
+        />
+
+        <label for="nombre">Nombre:</label>
+        <input 
+          type="text" 
+          id="nombre" 
+          placeholder="Ingrese su nombre" 
+          required 
+        />
+
+        <label for="apellido">Apellido:</label>
+        <input 
+          type="text" 
+          id="apellido" 
+          placeholder="Ingrese su apellido" 
+          required 
+        />
+
+        <label for="direccion">Dirección:</label>
+        <input 
+          type="text" 
+          id="direccion" 
+          placeholder="Ingrese su dirección" 
+          required 
+        />
+
+        <label for="telefono">Teléfono:</label>
+        <input 
+          type="tel" 
+          id="telefono" 
+          placeholder="Ingrese su teléfono" 
+          required 
+        />
+
+        <label for="email">Email:</label>
+        <input 
+          type="email" 
+          id="email" 
+          placeholder="Ingrese su email" 
+          required 
+        />
+
+        <label for="gender">Género:</label>
+        <select id="gender" required>
+          <option value="male">Masculino</option>
+          <option value="female">Femenino</option>
+          <option value="other">Otro</option>
+        </select>
+
+        <div class="button-group">
+          <input type="button" value="Insertar" id="insertButton" />
+          <input type="button" value="Modificar" id="modifyButton" />
+          <input type="button" value="Eliminar" id="deleteButton" />
+          <input type="button" value="Consultar" id="consultButton" />
+          <input type="button" value="Salir" id="exitButton" />
+        </div>
+      </form>
+      <div id="result"></div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
