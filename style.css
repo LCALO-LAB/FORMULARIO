@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   margin: 0;
-  padding: 20px;
+  padding: 15px;
 }
 
 /* Contenedor principal */
@@ -57,7 +57,7 @@ select {
   border: none;
   border-radius: 4px;
   color: white;
-  font-size: 16px;
+  font-size: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
